@@ -15,7 +15,7 @@ from PIL import Image, ImageOps
 import leafseg
 
 # EDIT THIS: your Hugging Face MODEL repo that holds raw.onnx, leaf.onnx and classes.json
-HF_REPO = os.environ.get("HF_REPO", "Howard/bean_leaf_onnx")
+HF_REPO = os.environ.get("HF_REPO", "Howard16/bean_leaf_onnx")
 
 MODES = ("raw", "leaf")
 MEAN = np.array([0.485, 0.456, 0.406], np.float32)
